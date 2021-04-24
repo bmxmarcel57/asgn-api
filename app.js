@@ -21,7 +21,7 @@ if(!db) {
 
 var port = 8080;
 
-app.use("/api", apiRouter);
+app.use("/asgn-api", apiRouter);
 
 app.get('/', (req, res) => res.send('Hello World with Express'));
 
