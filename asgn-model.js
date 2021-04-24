@@ -17,5 +17,5 @@ var assignmentSchema = mongoose.Schema({
 
 var Assignment = module.exports = mongoose.model("assignment", assignmentSchema);
 module.exports.get = function (callback, limit) {
-    Assignment.find(callback.limit(limit));
+    Assignment.find(callback).limit(limit);
 }

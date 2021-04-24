@@ -1,6 +1,6 @@
 // asgn-controller.js
 
-const Assignment = require("./model");
+const Assignment = require("./asgn-model");
 
 exports.index = function (req, res) {
     Assignment.get(function (err, assignments) {
